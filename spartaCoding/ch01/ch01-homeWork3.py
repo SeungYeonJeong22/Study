@@ -7,7 +7,6 @@ pizza09  = pd.read_csv('IndStudy/spartaCoding/data/pizza_09.csv')
 
 #요일별 주문량
 weeks = ['월','화','수','목','금','토','일']
-
 c_data = chicken09.groupby('요일').sum()['통화건수'].reindex(weeks)
 p_data = pizza09.groupby('요일').sum()['통화건수'].reindex(weeks)
 
